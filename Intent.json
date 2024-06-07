@@ -1,0 +1,36 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Hello", "Hi", "Hey", "Good morning", "Good afternoon"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What can I do for you?", "Hey! How can I help you today?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "Bye", "See you later", "Talk to you later", "quit", "exit"],
+      "responses": ["Goodbye! Have a great day!", "Bye! Take care!", "See you later! If you have any more questions, feel free to ask."]
+    },
+    {
+      "tag": "ask_loan_eligibility",
+      "patterns": ["Am I eligible for a loan?", "Can I apply for a loan?", "Do I qualify for a loan?", "How can I check my loan eligibility?", "What are the requirements for a loan?"],
+      "responses": ["I can help you with that. Let's get started with a few questions."],
+      "questions": ["Please tell me your age.", "Please tell me your monthly income in numerical value."],
+      "variables": ["age", "income"]
+    },
+    {
+      "tag": "ask_continue",
+      "patterns": ["Do you want to continue?", "Would you like to proceed?", "Continue process"],
+      "responses": ["Do you want to continue with the loan application process?"]
+    },
+    {
+      "tag": "ask_email",
+      "patterns": ["What is your email address?", "Email", "Email address"],
+      "responses": ["Please provide your email address."]
+    },
+    {
+      "tag": "thank",
+      "patterns": ["Thank you", "Thanks", "I appreciate it", "Thank you very much"],
+      "responses": ["You're welcome! If you have any more questions, feel free to ask.", "No problem! Let me know if you need any further assistance."]
+    }
+  ]
+}
